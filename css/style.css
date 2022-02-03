@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+p {
+    letter-spacing: 1px;
+    color: #999;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+header #logo {
+    width: 156px;
+    height: 45px;
+    float: left;
+    margin-left: 50px;
+    font-size: 2em;
+}
+
+header nav {
+    float: right;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+header nav label {
+    display: none;
+}
+
+header nav input {
+    display: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+}
+
+header nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+header nav ul {
+    overflow: auto;
+    padding: 0;
+    margin: 0 15px;
+}
+
+header nav ul li {
+    /* đưa các thẻ li dồn sang bên trái */
+    float: left;
+    /* tạo khoảng cách giữa các thẻ li */
+    margin: 0 10px;
+    list-style-type: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.dropdown:hover li {
+    margin: 0;
+    margin-left: 0;
+}
+
+.dropdown ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown ul li {
+    margin-left: 0;
+}
+
+.dropdown:hover ul {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color: black;
+    color: white;
+}
+
+.dropdown:hover ul li {
+    border-radius: 5px;
+}
+
+#main-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#main-header h2 {
+    font-size: 50px;
+    /* khoảng cách h2 với p ngắn */
+    margin-bottom: 10px;
+}
+
+#main-header p {
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+#main-header-readmore {
+    color: white;
+    margin-top: 10%;
+    padding: 10px;
+}
+
+#main-header-readmore a {
+    border: 2px white solid;
+    /* width: 55px; */
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+#main-header-readmore:hover a {
+    color: black;
+    background-color: white;
+}
+
+#label-list {
+    /* border: 1px white solid; */
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+}
+
+#label-list-button {
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    padding: 5px;
+    margin: 5px;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 992px) {
+    header #logo {
+        margin-top: 2%;
+    }
+    header nav label {
+        display: block;
+        padding: 15px;
+        margin-top: 7%;
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+        /* border: 2px tomato solid; */
+    }
+    header nav ul {
+        /* xổ các thẻ li trong ul */
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    header nav label:hover {
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+    }
+    header nav label:hover ul {
+        display: block;
+    }
+    nav input[type="checkbox"]:checked~ul {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #main-header {
+        width: 90%;
+    }
+    #main-header h2 {
+        font-size: 25px;
+    }
+    #main-header p {
+        text-align: center;
+    }
+}
+
+
+/* welcome */
+
+#welcome {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+#welcome h2 {
+    font-size: 3em;
+}
+
+#welcome p {
+    color: gray;
+    margin: 30px auto;
+}
+
+#welcome img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    #welcome {
+        padding: 220px 10%;
+    }
+    #welcome h2 {
+        font-size: 3em;
+        padding: 0;
+    }
+    #welcome p {
+        margin: 50px 8%;
+    }
+    #welcome img {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #welcome {
+        padding: 100px 10%;
+    }
+    #welcome h2 {
+        font-size: 3em;
+        padding: 0;
+    }
+    #welcome p {
+        color: gray;
+        margin: 50px 8%;
+    }
+    #welcome img {
+        width: 100%;
+    }
+}
+
+
+/* what we do */
+
+#what-we-do {
+    width: 100%;
+    padding: 224px 10%;
+}
+
+#what-we-do #wwd {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+#what-we-do h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+#what-we-do #mini-box {
+    width: 23%;
+    height: 450px;
+    position: relative;
+}
+
+#mini-box h3 {
+    margin: 1rem 0;
+}
+
+#what-we-do #mini-box p {
+    height: 20%;
+    color: gray;
+    position: absolute;
+    bottom: 4rem;
+}
+
+#what-we-do img {
+    width: 150px;
+    height: 150px;
+    border-radius: 300px;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 992px) {
+    #what-we-do {
+        padding: 100px;
+        padding-top: 0;
+    }
+    #what-we-do #wwd #mini-box {
+        padding: 20px;
+        width: 50%;
+        height: 20rem;
+    }
+    #what-we-do h2 {
+        margin: 1em;
+    }
+    #what-we-do img {
+        margin: 0;
+    }
+    #what-we-do #mini-box p {
+        height: 20%;
+        color: gray;
+        bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #what-we-do {
+        padding: 10px;
+    }
+    #what-we-do #wwd #mini-box {
+        width: 100%;
+        padding: 20px;
+        height: 20rem;
+    }
+    #what-we-do p {
+        padding: 15px;
+        position: absolute;
+        bottom: 3rem;
+    }
+}
