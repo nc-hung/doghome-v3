@@ -264,7 +264,8 @@ header nav ul li {
 
 #what-we-do {
     width: 100%;
-    padding: 224px 10%;
+    padding: 100px 10%;
+    padding-top: 0;
 }
 
 #what-we-do #wwd {
@@ -339,5 +340,106 @@ header nav ul li {
         padding: 15px;
         position: absolute;
         bottom: 3rem;
+    }
+}
+
+#statistics {
+    min-height: 25rem;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+}
+
+#statistics h2 {
+    /* font-size: 3em; */
+    margin-top: 3rem;
+}
+
+#statistics #pack {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#statistics #pack #s {
+    width: 25%;
+    /* float: left; */
+    margin-left: 100px;
+    text-align: center;
+    height: 150px;
+}
+
+#statistics h3 {
+    font-size: 70px;
+    font-weight: 100;
+}
+
+#statistics .s1,
+.s2,
+.s3,
+.s4 {
+    text-align: center;
+    margin: 4%;
+}
+
+@media only screen and (max-width: 992px) {
+    #statistics h3 {
+        font-size: 50px;
+        font-weight: 100;
+    }
+    #statistics #pack {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        grid-template-areas: "s1 s2" " s3 s4";
+    }
+    .s1 {
+        grid-area: s1;
+    }
+    .s2 {
+        grid-area: s2;
+    }
+    .s3 {
+        grid-area: s3;
+    }
+    .s4 {
+        grid-area: s4;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #statistics h2 {
+        margin: 0;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    #statistics #pack {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "s1" "s2" "s3" "s4";
+    }
+    .s1 {
+        grid-area: s1;
+    }
+    .s2 {
+        grid-area: s2;
+    }
+    .s3 {
+        grid-area: s3;
+    }
+    .s4 {
+        grid-area: s4;
+    }
+    #statistics .s1,
+    .s2,
+    .s3,
+    .s4 {
+        text-align: center;
+        margin: 2%;
     }
 }
