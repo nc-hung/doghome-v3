@@ -825,3 +825,230 @@ header nav ul li {
 
 
 /* contact */
+
+#contact {
+    padding: 40px 120px;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 43px;
+    margin: 35px 0;
+}
+
+#contact .content {
+    width: 100%;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* .content .main1 */
+
+.content .main1 .main1_content .main1_item {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: row;
+}
+
+.content .main1 h3 {
+    font-weight: inherit;
+    text-align: left;
+    color: #ff9900;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.content .main1 h4 {
+    font-size: 1.3em;
+    font-weight: inherit;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.content .main1 .main1_item_text h4 {
+    font-size: 1.3em;
+    font-weight: inherit;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.content .main1 .main1_item_text p {
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+
+.content .main1 .main1_content .main1_item i {
+    font-size: 30px;
+}
+
+.main1_item_icon {
+    width: 20%;
+    font-size: 30px;
+}
+
+
+/* .content .main2 */
+
+.content .main2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2em;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 7px 7px 10px 0 rgb(56 56 56 / 21%);
+}
+
+.content .main2 .form-content {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.content .main2 .form-content input {
+    outline: none;
+    padding: 15px;
+    font-size: 16px;
+    color: #555;
+    width: 100%;
+    border: 1px solid #e6e6e6;
+}
+
+.content .main2 .form-content textarea {
+    padding: 15px;
+    max-height: 180px;
+    font-size: 16px;
+    color: #555;
+    width: 100%;
+    resize: none;
+    border: 1px solid #e6e6e6;
+    font-family: inherit;
+}
+
+.content .main2 .form-content #submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #fdb54b;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+@media only screen and (max-width: 992px) {
+    #contact {
+        padding: 40px 30px;
+    }
+    .content {
+        padding: 0;
+        /* không nhận css này?  vẫn chạy: padding: 0px 80px;*/
+    }
+    .main1 {
+        width: 40%;
+    }
+    .main2 {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #contact {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        /* width: 100%; */
+    }
+    .content {
+        /* display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 100%; */
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "main1" "main2";
+    }
+    .main1 {
+        grid-area: main1;
+    }
+    .main2 {
+        /* width: 100%; */
+        grid-area: main2;
+    }
+}
+
+
+/* footer */
+
+.footer {
+    background-color: #17181b;
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: auto;
+    grid-template-areas: "about1" "who-are-where" "about2" "newsletter";
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.footer h3 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    /* text-transform: uppercase; */
+    margin: 20px 0;
+}
+
+.footer h4 {
+    color: white;
+    font-weight: inherit;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.footer p {
+    font-size: 15px;
+    color: #727377;
+}
+
+#about1 {
+    grid-area: about1;
+}
+
+#who-are-where {
+    grid-area: who-are-where;
+}
+
+#about2 {
+    grid-area: about2;
+}
+
+#newsletter {
+    grid-area: newsletter;
+}
+
+#newsletter input {
+    padding: 13px;
+    font-size: 15px;
+}
+
+#newsletter .mail {
+    padding: 13px;
+    font-size: 15px;
+}
+
+#newsletter .btn-mail {
+    background-color: #c57600;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #fff;
+    /* margin-left: -5px;
+    background-color: #c57600;
+    border: none;
+    transition: all 0.2s; */
+}
