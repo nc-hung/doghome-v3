@@ -674,6 +674,9 @@ header nav ul li {
 }
 
 @media only screen and (max-width: 576px) {
+    #testimonials {
+        padding: 20px;
+    }
     #testimonials h2 {
         font-size: 35px;
     }
@@ -694,5 +697,115 @@ header nav ul li {
     }
     .testimonials-items a {
         margin: 4% 10% 0% 0%;
+    }
+}
+
+
+/* ourblog */
+
+#ourblog {
+    padding: 100px;
+}
+
+#ourblog h2 {
+    margin: 35px 0;
+}
+
+#ourblog-content {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: "item1 item2 item3";
+    grid-gap: 1em;
+    justify-content: center;
+}
+
+#ourblog-content .shadow {
+    border: solid 1px rgb(219, 219, 219);
+    box-shadow: 0px 3px 10px 1px rgb(45 45 45 / 8%);
+}
+
+#ourblog-content img {
+    width: 100%;
+}
+
+#ourblog-content .item1 {
+    grid-area: item1;
+}
+
+#ourblog-content .item2 {
+    grid-area: item2;
+}
+
+#ourblog-content .it-content1 {
+    padding: 16px;
+}
+
+#ourblog-content .it-content1 h4 {
+    font-size: 21px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 15px;
+}
+
+#ourblog-content .it-content1 p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#ourblog-content .it-content1 a {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#ourblog-content .item3 {
+    grid-area: item3;
+    padding: 20px;
+}
+
+#ourblog-content .item3 h4 {
+    margin: 15px 0;
+    color: #ff9900;
+    font-weight: normal;
+}
+
+#ourblog-content .item3 p {
+    color: #1f1f1f;
+    font-size: 21px;
+    font-weight: 400;
+    transition: all 0.4s;
+}
+
+@media only screen and (max-width: 992px) {
+    #ourblog {
+        padding: 60px 10px 70px 10px;
+    }
+    #ourblog-content .it-content2 p {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #ourblog {
+        padding: 60px 20px 70px 20px;
+    }
+    #ourblog h2 {
+        font-size: 35px;
+        margin: -5px;
+    }
+    #ourblog-content {
+        /* display: grid; */
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas: "item1" " item2 " "item3";
+        grid-gap: 2em;
+        justify-content: center;
+        padding: 60px 20px 70px 20px;
+    }
+    #ourblog-content img {
+        border-radius: 1%;
     }
 }
