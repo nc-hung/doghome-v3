@@ -610,7 +610,7 @@ header nav ul li {
 #testimonials {
     padding: 45px;
     color: white;
-    background-image: url("/img/bg.jpg");
+    background-image: url("../img/bg.jpg");
     background-size: cover;
 }
 
@@ -989,7 +989,7 @@ header nav ul li {
     background-color: #17181b;
     padding: 30px 20px;
     display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-columns: 14% 14% 14% 35%;
     grid-template-rows: auto;
     grid-template-areas: "about1" "who-are-where" "about2" "newsletter";
     grid-gap: 1rem;
@@ -1000,7 +1000,6 @@ header nav ul li {
     color: #fff;
     font-size: 22px;
     font-weight: 500;
-    /* text-transform: uppercase; */
     margin: 20px 0;
 }
 
@@ -1042,13 +1041,72 @@ header nav ul li {
     font-size: 15px;
 }
 
+#color-smt {
+    background-color: #c57600;
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+}
+
+#mail-box {
+    padding: 13px;
+    font-size: 15px;
+}
+
 #newsletter .btn-mail {
     background-color: #c57600;
     padding: 15px 20px;
     font-size: 15px;
     color: #fff;
-    /* margin-left: -5px;
-    background-color: #c57600;
-    border: none;
-    transition: all 0.2s; */
+}
+
+.fab {
+    font-size: 35px;
+    padding: 2px;
+    text-align: center;
+}
+
+.fa-facebook-square {
+    color: #3b5998;
+}
+
+.fa-instagram-square {
+    color: #1da1f2;
+}
+
+.fa-twitter-square {
+    color: #ea4c89;
+}
+
+.fa-google-plus-square {
+    color: #f44336;
+}
+
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 576px) {
+    .footer {
+        padding: 15px 25px;
+        /* display: flex;
+        flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: auto;
+        grid-template-areas: "about1 who-are-where" "about2  .  " "newsletter newsletter";
+        /* justify-content: flex-start; */
+    }
+    #about1 {
+        grid-area: about1;
+    }
+    #about2 {
+        grid-area: about2;
+    }
+    #who-are-where {
+        grid-area: who-are-where;
+    }
+    #newsletter {
+        grid-area: newsletter;
+    }
+    #newsletter {}
 }
