@@ -944,7 +944,7 @@ header nav ul li {
     #contact {
         padding: 40px 30px;
     }
-    .content {
+    #contact .content {
         padding: 0;
         /* không nhận css này?  vẫn chạy: padding: 0px 80px;*/
     }
@@ -952,7 +952,7 @@ header nav ul li {
         width: 40%;
     }
     .main2 {
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -963,21 +963,17 @@ header nav ul li {
         flex-direction: column;
         /* width: 100%; */
     }
-    .content {
-        /* display: flex;
+    #contact .content {
+        display: flex;
         flex-direction: column;
         padding: 0;
-        width: 100%; */
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto;
-        grid-template-areas: "main1" "main2";
+        width: 100%;
     }
-    .main1 {
+    #contact .content .main1 {
         grid-area: main1;
     }
-    .main2 {
-        /* width: 100%; */
+    #contact .content .main2 {
+        width: 100%;
         grid-area: main2;
     }
 }
@@ -987,13 +983,14 @@ header nav ul li {
 
 .footer {
     background-color: #17181b;
-    padding: 30px 20px;
+    padding: 30px 50px;
     display: grid;
     grid-template-columns: 14% 14% 14% 35%;
     grid-template-rows: auto;
     grid-template-areas: "about1" "who-are-where" "about2" "newsletter";
     grid-gap: 1rem;
-    justify-content: center;
+    justify-content: space-evenly;
+    /* justify-self: center; */
 }
 
 .footer h3 {
@@ -1013,10 +1010,12 @@ header nav ul li {
 .footer p {
     font-size: 15px;
     color: #727377;
+    margin-left: 1%;
 }
 
 #about1 {
     grid-area: about1;
+    margin-left: 1%;
 }
 
 #who-are-where {
@@ -1108,5 +1107,4 @@ header nav ul li {
     #newsletter {
         grid-area: newsletter;
     }
-    #newsletter {}
 }
