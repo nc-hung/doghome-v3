@@ -5,6 +5,26 @@
             margin: 0;
         }
         
+        @keyframes zoom_in {
+            from {
+                background-size: 50%;
+                font-size: 5px;
+            }
+            to {
+                background-size: 100%;
+                font-size: 50px;
+            }
+        }
+        
+        @keyframes opacity_div {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
         h2 {
             text-align: center;
             font-size: 3em;
@@ -23,6 +43,8 @@
             background-position: center;
             position: relative;
             color: white;
+            animation: opacity_div 2s;
+            animation-timing-function: ease;
         }
         
         header #logo {
@@ -102,6 +124,8 @@
             font-size: 50px;
             /* khoảng cách h2 với p ngắn */
             margin-bottom: 10px;
+            animation: zoom_in 4s;
+            animation-timing-function: ease;
         }
         
         #main-header p {
@@ -219,6 +243,9 @@
         #welcome {
             padding: 100px 10%;
             text-align: center;
+            animation: opacity_div 2s;
+            animation-delay: 1s;
+            animation-timing-function: linear;
         }
         
         #welcome h2 {
